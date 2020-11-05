@@ -9,7 +9,28 @@ html {
   margin: 0 !important;
   overflow: auto !important;
 }
+/* this is for the logo being covered at the top when openned in chrome*/
+#dummy{
+  margin:50px;
+  padding:40px;
+}
 
+/* this is for responsiveness problem at a mobile or tablet level*/
+@media only screen and (max-width: 900px) {
+  #dummy{
+    margin:0px;
+    padding:0px;
+  }
+  #image1{
+    max-width : 50%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+  }
+  #image2{
+    display:none;
+  }
+}
 body {
   color: #5E5C7F;
   background-color: #F9F9FF;
