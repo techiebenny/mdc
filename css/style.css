@@ -15,6 +15,22 @@ html {
   padding:40px;
 }
 
+body {
+  color: #5E5C7F;
+  background-color: #F9F9FF;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,"Rubik", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.small{
+  font-size: 85%;
+  font-weight: 400;
+}
+
 /* this is for responsiveness problem at a mobile or tablet level*/
 @media only screen and (max-width: 900px) {
   #dummy{
@@ -30,16 +46,13 @@ html {
   #image2{
     display:none;
   }
+  body{
+    font-size: 0.85rem;
+  }
 }
-body {
-  color: #5E5C7F;
-  background-color: #F9F9FF;
+
+.banner-text{
   font-family: "Rubik", sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -65,7 +78,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   color: #454360;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Segoe UI',"Rubik", sans-serif;
   font-weight: 700;
   margin: 20px 0;
 }
@@ -194,6 +207,7 @@ header.desktop-header-1 .vertical-menu li .switch {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 header.desktop-header-1 .vertical-menu li a {
   color: #FFF;
@@ -889,6 +903,16 @@ footer.footer.light {
     transform: scale(1);
   }
 }
+@keyframes button-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
 @keyframes hvr-push {
   50% {
     -webkit-transform: scale(0.8);
@@ -1167,15 +1191,15 @@ footer.footer.light {
 }
 
 .shadow-blue {
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.5);
-  -moz-box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.5);
-  box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.5);
+  -webkit-box-shadow: 0px 5px 20px 5px rgba(108, 108, 229, 0.5);
+  -moz-box-shadow: 0px 5px 20px 5px rgba(108, 108, 229, 0.5);
+  box-shadow: 0px 5px 20px 5px rgba(108, 108, 229, 0.5);
 }
 
 .shadow-pink {
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(249, 123, 139, 0.5);
-  -moz-box-shadow: 0px 5px 20px 0px rgba(249, 123, 139, 0.5);
-  box-shadow: 0px 5px 20px 0px rgba(249, 123, 139, 0.5);
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(249, 123, 249, 0.5);
+  -moz-box-shadow: 0px 5px 20px 0px rgba(249, 123, 249, 0.5);
+  box-shadow: 0px 5px 20px 0px rgba(249, 123, 249, 0.5);
 }
 
 .shadow-yellow {
@@ -1184,8 +1208,16 @@ footer.footer.light {
   box-shadow: 0px 5px 20px 0px rgba(249, 215, 76, 0.5);
 }
 
-.padding-30 {
-  padding: 30px;
+.padding-30{
+  padding: 2rem;
+}
+
+.padding-45 {
+  padding: 2.5rem;
+}
+
+.pad-left-15{
+  padding-left: 2.5em;
 }
 
 .triangle-left:before {
@@ -1272,14 +1304,14 @@ footer.footer.light {
   -o-transform: scale(0.8);
   transform: scale(0.8);
 }
-
-  opacity: 1;
+/*
+{  opacity: 1;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
-}
+}*/
 
 .my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
   -webkit-transform: scale(0.8);
