@@ -1170,12 +1170,17 @@ footer.footer.light {
   background: #0078d4;
 }
 
+.circle{
+  border-radius: 50%;
+  /*clip-path: circle(30px at 35px 35px);*/
+}
+
 .rounded {
   border-radius: 20px !important;
 }
 
 .bg-white {
-  background: #FFF;
+  background: #FFF; 
 }
 
 .shadow-dark, .desktop-header-3 .dropdown-menu, .form-control, .form-control:focus {
