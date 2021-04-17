@@ -249,7 +249,7 @@ header.desktop-header-1 .footer {
 }
 header.desktop-header-1 .copyright {
   color: #9C9AB3;
-  font-size: 14px;
+  font-size: 12px;
 }
 header.desktop-header-1.light {
   background: #F9F9FF;
@@ -860,6 +860,7 @@ select.portfolio-filter-mobile {
 
 .circle {
   border-radius: 100%;
+  object-fit: contain;
 }
 
 footer.footer {
@@ -1224,6 +1225,11 @@ footer.footer.light {
 .pad-left-15{
   padding-left: 2.5em;
 }
+
+.pad-right-15{
+  padding-right: 2.5em;
+}
+
 
 .triangle-left:before {
   content: "";
